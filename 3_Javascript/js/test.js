@@ -27,3 +27,4 @@ document.getElementsByClassName("apply1").addEventListener("click", function () 
 
 } )
 
+console.log("깃허브 연습중")

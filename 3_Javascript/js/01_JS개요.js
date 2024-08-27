@@ -24,5 +24,8 @@ function lightMode() {
   body.style.color = "black" ;
   body.style.backgroundColor = "white";
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> a49ec4109469ed362528acb200ce05b8d3b06e16
 console.log("학원에서 작성")
