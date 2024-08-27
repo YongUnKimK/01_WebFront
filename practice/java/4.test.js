@@ -1,17 +1,12 @@
+document.getElementById("btn").addEventListener("click", function () {
+  const number = parseInt(document.getElementById("numberInput").value);
 
-        // JavaScript 코드
-        document.getElementById("btn").addEventListener("click",  () => {
-          // 사용자 입력 값 가져오기
-          const tagName = document.getElementById("tagName").value;
-          const tagInnerText = document.getElementById("tagInnerText").value;
-          const colorName = document.getElementById("colorName").value;
-
-          // 새로운 태그 생성
-          const newElement = document.createElement(tagName);
-          newElement.innerText = tagInnerText;
-          newElement.style.color = colorName;
-
-          // 결과 섹션에 추가
-          const resultSection = document.getElementById("result");
-          resultSection.appendChild(newElement);
-      });
+  // 짝수 홀수 판별 후 3초 후에 alert창 출력
+  setTimeout(function () {
+      if (number % 2 === 0) {
+          alert("짝수입니다.");
+      } else {
+          alert("홀수입니다.");
+      }
+  }, 3000); // 3000밀리초 = 3초
+});
